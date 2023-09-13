@@ -68,7 +68,7 @@
 				<view class="gray3"> 
 				
 				</view>
-				<view>共{{ numsum }}个商品，小计：<label class="font-bold font40">¥ {{ total }}</label></view>
+				<view>共{{ numsum }}个商品，小计：<label class="font-bold font40">¥ {{ Math.round(total*100)/100  }}</label></view>
 			</view>
 
 		</view>
@@ -96,7 +96,7 @@
 				<view class="d-row d-jc-start d-ai-centen" style="padding-left: 10rpx;">
 					<view class="d-ai-centen padding-left-10">
 						<text style="vertical-align: middle;">合计</text>
-						<text class="padding-left-10 text-bolder" style="vertical-align: middle;color: #ff6634;font-size: 37rpx;">¥ {{ total }}</text>
+						<text class="padding-left-10 text-bolder" style="vertical-align: middle;color: #ff6634;font-size: 37rpx;">¥ {{  Math.round(total*100)/100  }}</text>
 					</view>
 				</view>
 				<view class="go gray4">

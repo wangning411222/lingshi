@@ -135,7 +135,7 @@
 		</view>
 		<!-- 评价 -->
 		<view v-if="tabcurrent == 2" class="u-menu-wrap">
-			<scroll-view scroll-y scroll-with-animation class="menu-scroll-view" @scrolltolower="commentTobottom"
+			<scroll-view scroll-y scroll-with-animation class="menu-scroll-view"
 				style="padding-bottom:120rpx;">
 				<hx-comment ref="comment" :companyid="companyid"></hx-comment>
 			</scroll-view>
@@ -347,14 +347,6 @@
 			},
 		},
 		methods: {
-      // 商品到底了
-      scrollToLower(){
-        let len=this.cate_list.length
-         if( this.current+1<len){
-         let index=this.current+1
-             this.swichMenu(index)
-        }
-      },
 			// 评论到底了
 			commentTobottom() {
 				this.$refs.comment.getPostList()
